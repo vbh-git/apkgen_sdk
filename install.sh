@@ -3,6 +3,7 @@ cp ~/.bashrc ~/.bashrc.bak
 # creation of setup folder for temporary files
 rm -rf setup
 mkdir setup
+mkdir generated_apps
 mkdir Android &>/dev/null
 mkdir Android/Sdk &>/dev/null
 cd setup
