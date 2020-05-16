@@ -8,7 +8,7 @@ mkdir Android &>/dev/null
 mkdir Android/Sdk &>/dev/null
 cd setup
 # installing basic packages
-yes | apt install openjdk-8-jdk gradle nodejs npm unzip &>/dev/null
+yes | apt install openjdk-8-jdk gradle nodejs npm unzip imagemagick &>/dev/null
 echo "Installation Basic Packages       Completed"
 # downloading and setting up android tools
 rm -rf /opt/androidcmd
@@ -33,6 +33,7 @@ sdkmanager --install "platform-tools" "build-tools;29.0.3" &>/dev/null
 echo "Installation Android SDK          Completed"
 # installing cordova sdk
 npm install -g cordova &>/dev/null
+npm install -g cordova-icon &>/dev/null
 echo "Installation Cordova              Completed"
 cd 
 rm -rf setup
